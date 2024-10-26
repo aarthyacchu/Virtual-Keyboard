@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* header section  */
+
+header{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #e9e9e9;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* background image  */
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+ /* whole container */
+
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 100vh;
+    
+}
+
+/*  input box  section */
+
+.inputbox {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 60%; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurring background for glassy effect */
+}
+
+input {
+    width: 100%;
+    height: 45px; 
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7); /* Transparent white */
+    backdrop-filter: blur(10px);  /* Blurring background for glassy effect */
+    outline: none;
+}
+
+/* text display section */
+
+h1{
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 60%; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:system-ui;
+}
+
+/* keyboard back screen  */
+
+.backscreen {
+    border-radius: 10px;
+    position: absolute;
+    height: 44%;
+    width: calc(60% + 20px); 
+    margin-left: calc(20% - 10px); 
+    display: flex;
+    justify-content: center;
+    border-style: none;
+    padding: 0 10px 10px 10px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurring background for glassy effect */
+}
+
+/* buttons  */
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* button styling  */
+
+button{
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurring background for glassy effect */
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Semi-transparent border */
+    margin: 0 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+ /* adding hover effect  */
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgba(255, 255, 255, 0.4); /* Slightly darker when pressed */
+}
+
+/* Styling search button */
+
+button[data-key="search"] {
+    width: 140px; 
+    border-radius: 35px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Styling space bar button */
+button[data-key=" "] {
+    width: 400px; 
+    border-radius: 35px;
+}
